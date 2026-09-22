@@ -4,13 +4,18 @@
 
 body {
   margin: 0;
-  font-family: 'Inter', system-ui, sans-serif; /* ОНОВЛЕНО */
+  font-family: 'Inter', system-ui, sans-serif; 
   font-size: 1rem;
   line-height: 1.5;
   color: #3d2b56;
   background-color: #f8f9fa;
 }
 
+/* 
+ * НЕЧІТКА ВИМОГА: "має виглядати як каталог, яким приємно гортати".
+ * ОБҐРУНТУВАННЯ: Використано грайливий шрифт 'Nunito' для заголовків, 
+ * щоб створити атмосферу розваг, та нейтральний 'Inter' для опису правил.
+ */
 h1, h2, h3 {
   font-family: 'Nunito', sans-serif;
   color: #2b1f3d;
