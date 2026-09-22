@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Каталог настільних ігор</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Nunito:wght@700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -16,7 +17,7 @@
         </nav>
     </header>
 
-    <!-- Основний вміст -->
+  <!-- Основний вміст -->
     <main>
         <!-- Блок фільтрів -->
         <section id="filters">
@@ -24,29 +25,31 @@
             <form action="#" method="GET">
                 <label for="player-count">Кількість гравців:</label>
                 <input type="number" id="player-count" name="players" min="1" max="10">
+                <button type="submit" class="btn-filter">Застосувати</button>
             </form>
         </section>
 
-  <!-- Список карток ігор -->
-<section id="games">
-    <h2>Ігри</h2>
-    
-    <div class="cards"> 
-        
-        <article>
-            <h3>Каркассон</h3>
-            <img src="assets/img/carcassonne.jpg" alt="Коробка настільної гри Каркассон">
-            <p>Класична гра на вибудовування міст та доріг.</p>
-        </article>
+        <!-- Список карток ігор -->
+        <section id="games">
+            <h2>Ігри</h2>
+            
+            <div class="cards"> 
+                <article>
+                    <h3>Каркассон</h3>
+                    <span class="badge">👥 2-5 гравців</span>
+                    <img src="assets/img/carcassonne.jpg" alt="Коробка настільної гри Каркассон">
+                    <p>Класична гра на вибудовування міст та доріг.</p>
+                </article>
 
-        <article>
-            <h3>Манчкін</h3>
-            <img src="assets/img/munchkin.jpg" alt="Картка з настільної гри Манчкін">
-            <p>Весела карткова гра про зачистку підземель.</p>
-        </article>
-    </div> 
-    
-</section>
+                <article>
+                    <h3>Манчкін</h3>
+                    <span class="badge">👥 3-6 гравців</span>
+                    <img src="assets/img/munchkin.jpg" alt="Картка з настільної гри Манчкін">
+                    <p>Весела карткова гра про зачистку підземель.</p>
+                </article>
+            </div> 
+            
+        </section>
     </main>
 
     <!-- Підвал -->

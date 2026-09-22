@@ -4,13 +4,51 @@
 
 body {
   margin: 0;
-  font-family: system-ui, sans-serif;
+  font-family: 'Inter', system-ui, sans-serif; /* ОНОВЛЕНО */
   font-size: 1rem;
   line-height: 1.5;
   color: #3d2b56;
   background-color: #f8f9fa;
 }
 
+h1, h2, h3 {
+  font-family: 'Nunito', sans-serif;
+  color: #2b1f3d;
+  margin-top: 0;
+}
+
+/* Деталь нечіткої вимоги: бейдж як акцент */
+.badge {
+  display: inline-block;
+  background-color: #ffb703;
+  color: #3d2b56;
+  padding: 4px 12px;
+  border-radius: 12px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  margin-bottom: 12px;
+}
+
+/* 
+ * ЧІТКА ВИМОГА: кнопки фільтрів - контрастний акцентний колір, 
+ * область натискання мінімум 44x44px. 
+ */
+.btn-filter {
+  background-color: #7b2cbf;
+  color: white;
+  min-height: 44px;
+  padding: 0 16px;
+  border: none;
+  border-radius: 8px;
+  font-weight: 600;
+  cursor: pointer;
+  font-family: 'Inter', sans-serif;
+  transition: background-color 0.2s;
+}
+
+.btn-filter:hover {
+  background-color: #5a189a;
+}
 img {
   max-width: 100%;
   height: auto;
