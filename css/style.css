@@ -113,10 +113,18 @@ form input {
     background-color: #5a189a;
 }
 
+/* ================================================= */
+/* ДОДАНО: Гнучка адаптивна сітка для карток ігор  */
+/* ================================================= */
+.cards {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* 2 колонки */
+    gap: 24px; /* Відстань між картками */
+}
+
 article {
     background-color: white;
     padding: 16px;
-    margin-bottom: 24px;
     border-radius: 8px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     transition: box-shadow 0.3s ease;
@@ -151,7 +159,31 @@ footer {
     text-align: center;
     padding: 24px;
     background-color: #e9ecef;
+    margin-top: 40px;
+}
+
+footer p {
+    margin: 0;
     color: #212529; 
     font-size: 0.9rem;
-    margin-top: 40px;
+}
+
+/* ========================================= */
+/* МЕДІА-ЗАПИТИ (Адаптивність / Breakpoints) */
+/* ========================================= */
+
+/* Планшети та мобільні телефони (ширина екрану до 768px) */
+@media (max-width: 768px) {
+    .cards {
+        grid-template-columns: 1fr; /* Картки шикуються в 1 колонку на малих екранах */
+    }
+
+    form {
+        flex-direction: column; /* Фільтри стають вертикально */
+        align-items: stretch;
+    }
+
+    header h1 {
+        font-size: 1.8rem; /* Зменшуємо заголовок, щоб вліз на мобільному */
+    }
 }
